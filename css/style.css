@@ -228,7 +228,6 @@
 
 .content .card {
   padding: 10px;
-  border: 1px solid black;
   -webkit-box-shadow: 0 3px 5px 0 black;
           box-shadow: 0 3px 5px 0 black;
   background-color: white;
