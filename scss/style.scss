@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.nav{
+   
+    &__hammasi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__logo, &__kirish{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn{
+        margin-left: 2rem;
+        padding: 8px 20px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__foo{
+        margin-left: 2rem;
+    }
+
+    &__tad{
+        display: flex;
+    }
+    
+    &__round{
+        border-radius: 50%;
+    }
+}
+
+.header{
+
+    margin-top: 3rem;
+
+    &__first{
+        padding: 0 21rem 0 0;
+        h1{
+            font-size: 45px;
+        }
+    }
+    &__buttons{
+        display: flex;
+        
+        align-items: center;
+        margin-top: 5rem;
+        
+    }
+    .kok{
+        display: flex;
+        background-color: #228BDA;
+        border-radius: 3px;
+        padding: 10px 20px;
+
+        img{
+            margin-left:0.8rem ;
+        }
+    }
+
+    .white{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+
+        img{
+            margin-right: 0.8rem;
+        }
+    }
+
+    &__second{
+        img{
+            transform: perspective(600px) rotateY(-15deg) ;
+           
+            margin-top: 30px;
+        }
+    }
+}
+
+
+.online{
+    margin-top: 3rem;
+    h1{
+        margin-bottom: 2rem;
+     text-align: center;
+     font-family: 'ProximaNova';
+     color: #2D3A45;
+    }
+    &__hammasi{
+        width: 60%;
+        margin: auto;
+
+        p{
+            font-family: 'ProximaNova';
+            font-size: 20px;
+            color: #2D3A45;
+        }
+    }
+  
+  
+}
+
+.pics{
+    margin-top: 6rem;
+    &__all{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+       
+    }
+     &__img2{
+            transform: perspective(600px) rotateY(15deg) ;
+        }
+
+}
+
+
+.content{
+    margin-top: 6rem;
+    &__all{
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        margin-top: 2rem;
+        font-family: 'ProximaNova';
+        font-size: 35px;
+        line-height: 58px;
+        color: #2D3A45;
+    }
+    p{
+        margin-top: 2rem;
+        font-family: 'ProximaNova';
+        font-size: 20px;
+        line-height: 28px;
+        color: #2D3A45;
+    }
+
+    &__first{
+        width: 40%;
+        .kok{
+            margin-top: 2rem;
+            display: flex;
+            background-color: #228BDA;
+            border-radius: 3px;
+            padding: 10px 20px;
+            border: 1px solid gray;
+        }
+        img{
+            margin-left: 0.8rem;
+        }
+    }
+
+    &__second{
+        display: flex;
+        justify-content: center;
+        .foo2{
+            transform: perspective(600px) rotateY(-15deg) ;
+        }
+    }
+    .card{
+        padding: 10px;
+        border: 1px solid black;
+        box-shadow: 0 3px 5px 0 black;
+        background-color: white;
+        z-index: 1;
+        position:relative;
+        top: 60%;
+        left: 20%;
+        height: 200px;
+        ul{
+            list-style: none;
+            height: auto;
+        }
+        li{
+            padding: 5px;
+            display: flex;
+            gap: 10px;
+        }
+    }
+    .oval{
+        border-radius: 50%;
+    }
+    .red{
+       
+        padding:3px;
+        margin-bottom: 3px;
+        background: linear-gradient(147.39deg, #FF8A9C 13.97%, #DB1634 92.67%);
+
+    }
+    .yellow{
+        padding:4px;
+        margin-bottom: 3px;
+        background: linear-gradient(147.39deg, #FFE58D 13.97%, #D98D07 92.67%);
+    }
+    .green{
+        padding:4px;
+        margin-bottom: 3px;
+        background: linear-gradient(147.39deg, #BDF77C 13.97%, #549A06 92.67%);
+    }
+    .blue{
+        padding:3px;
+        margin-bottom: 3px;
+        background: linear-gradient(147.39deg, #9BD5FF 13.97%, #228BDA 92.67%);
+
+    }
+}
+
+.kok{
+    border: 1px solid gray;
+}
+
+.kok:hover{
+    background-color: white;
+    transition: 0.5s ease;
+    color:#228BDA;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+
+.header__hammasi{
+    display: flex;
+}
+
+
+@media (max-width:1000px){
+    .header__second img{
+      width:199%
+    }
+}
+
+@media (max-width:899px){
+    .header__hammasi{
+        display: block;
+    }
+    .header__first{
+        padding: 0;
+    }
+    .header__buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__second{
+        display: flex;
+        justify-content: center;
+    }
+    .header__second img{
+        width:100%;
+        transform: perspective(0) rotateY(0) ;
+      }
+      .online__hammasi h1{
+          font-size: 40px;
+      }
+      .pics__all{
+          display: block;
+      }
+      .pics__first{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .pics__img2{
+        width:100%;
+        transform: perspective(0) rotateY(0) ;
+      }
+      .pics__second img{
+        width:100%;
+      }
+      .pics__second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content__all{
+          display: block;
+
+      }
+      .content__first{
+          width: 100%;
+      }
+      .btnt{
+          display: flex;
+          justify-content: center;
+      }
+      .foob{
+        width: 200%;
+        transform: perspective(0px) rotateY(0deg) ;
+      }
+      .content__second img{
+      width: 100%;
+      transform: perspective(0) rotateY(0) ;}
+      .content .rasm{
+          margin-top: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .content .card{
+          display: none;
+      }
+    }
+
+    @media (max-width:539px){
+        .nav__btn{
+            display: none;
+        }
+        .kurs{
+            display: none;
+        }
+        .online .online__hammasi{
+            width: 100%;
+        }
+        .online .online__hammasi h1{
+            font-size: 30px;
+        }
+        .header__first h1{
+            font-size: 30px;
+            text-align: center;
+        }
+        .pics__first{
+            margin-bottom: 4rem;
+        }
+    }
