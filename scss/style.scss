@@ -284,8 +284,8 @@
             display: flex;
             background-color: #228BDA;
             border-radius: 3px;
-            padding: 10px 20px;
-            border: 1px solid gray;
+            padding: 15px 20px;
+            border: 1px solid #228BDA;
         }
         img{
             margin-left: 0.8rem;
@@ -439,9 +439,239 @@ button{
     
 }
 
+.top{
+    position: relative;
+    padding-bottom: 30rem;
+    padding-top: 10rem;
 
+    .rec{
+        position: absolute;
+        left: 10%;
+        z-index: -1;
+    }
+    .top-all{
+        display: flex;
+        justify-content: space-between;
+    }
+    .loo{
+        border:#228BDA 1px solid;
+        cursor: pointer;
+        background: #228BDA;
+        border-radius: 3px;
+        display: inline;
+        color: white;
+        padding: 13px 29px;
+        img{
+            margin-left: 0.8rem;
+            
+        }
+    }
+    .loo:hover{
+
+       background-color: white;
+       color:#228BDA ;
+       transition: 0.3s ease;
+    }
+    &__second{
+        margin-top: 2rem;
+      margin-left: 6rem;
+        h1{
+            margin-bottom: 2rem;
+            font-family: 'ProximaNova';
+            font-size: 35px;
+            line-height: 40px;
+            /* identical to box height, or 114% */
+            color: #2D3A45;
+        }
+       
+        p{
+            margin-bottom: 3rem;
+            width: 60%;
+            font-family: 'ProximaNova';
+            font-size: 20px;
+            line-height: 28px;
+            /* or 140% */
+            color: #2D3A45;
+        }
+    }
+}
+
+    .card{
+        padding: 10px;
+        left: 0%;
+        top: 10%;
+        position: absolute;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(116, 131, 143, 0.135653);
+        border-radius: 4px;
+        .little{
+            top: -8%;
+            left: 80%;
+            font-weight: bold;
+            padding: 7px 20px;
+            position: absolute;
+            color: white;
+            background: #86BE47;
+            box-shadow: 0px 10px 20px rgba(134, 190, 71, 0.653327);
+            border-radius: 18px;
+        }
+        h4{
+            color: #8D9BA8;
+        }
+        h3,h4{
+            text-align: center;
+        }
+    }
+    .card2{
+        left: 13%;
+        top: 27%;
+    }
+
+    .card3{
+        left: 0%;
+        top: 50%;
+    }
+
+    .card4{
+        left: 14%;
+        top: 60%;
+    }
+
+    .card5{
+        left: 27%;
+        top: 70%;
+    }
+
+
+
+
+
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+       font-size: 40px;
+        padding: 70px 0;
+       
+        
+    }
+    .hey ul li{
+        color: 
+        #2D3A45;
+    }
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #666;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h2, h3, p{
+        margin-bottom: 0.5rem;
+      color:  #555;
+    }
+    .footer-col h2{
+        font-size: 20px;
+    }
+    .footer-col h3{
+        font-size: 25px;
+    }
+    .footer-col p{
+        font-size: 18px;
+    }
+
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #111;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 5px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:first-child{
+        margin-left: 0;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+@media (max-width:1485px){
+    .top__second{
+        margin-left: 15rem;
+        padding-left: 10rem;
+    }
+}
 
 @media (max-width:1000px){
+   
+    .card2{
+        left: 19%;
+    }
+    .card4{
+        left: 20%;
+    }
+    .card5{
+        left: 40%;
+    }
+   .top .rec{
+     display: none;
+        left: -100%;
+    }
+    .top{
+        background-color: rgb(246,248,250);
+    }
     .header__second img{
       width:199%
     }
@@ -456,6 +686,7 @@ button{
 }
 
 @media (max-width:899px){
+  
     .content{
         margin-bottom: 8rem;
     }
@@ -586,6 +817,46 @@ button{
       }
     }
 
+    @media(max-width:776px){
+        .little{
+            display: none;
+        }
+        .top{
+            padding-bottom: 6rem;
+        }
+        .top-all{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .top-all{
+            display:block;
+            justify-content: center;
+            
+        }
+        .top__first{
+            
+           width: 100%;
+           margin: 0;
+           padding: 0;
+           display: none;
+         
+        }
+        .top__second{
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding-left: 0;
+            margin-left: 0;
+            p{
+                width: 100%;
+            }
+        }
+        .card{
+            position: static;
+
+        }
+    }
+
     @media (max-width:539px){
         .nav__btn{
             display: none;
@@ -607,3 +878,15 @@ button{
             margin-bottom: 4rem;
         }
     }
+  
+    @media(max-width: 767px){
+        .footer-col{
+          width: 50%;
+          margin-bottom: 30px;
+      }
+      }
+      @media(max-width: 574px){
+        .footer-col{
+          width: 100%;
+      }
+      }
