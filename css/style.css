@@ -10,6 +10,15 @@
   margin: auto;
 }
 
+.background .image10 {
+  position: absolute;
+  left: -8%;
+  top: -8%;
+  -webkit-transform: perspective(600px) rotateY(-13deg);
+          transform: perspective(600px) rotateY(-13deg);
+  z-index: -1;
+}
+
 .nav__hammasi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +76,18 @@
   margin-top: 3rem;
 }
 
+.header__hammasi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__first {
   padding: 0 18rem 0 0;
 }
@@ -115,10 +136,26 @@
   margin-right: 0.8rem;
 }
 
-.header__second img {
+.header__second {
+  position: relative;
+}
+
+.header__second .image1 {
   -webkit-transform: perspective(600px) rotateY(-15deg);
           transform: perspective(600px) rotateY(-15deg);
   margin-top: 30px;
+}
+
+.header__second .path2 {
+  position: absolute;
+  left: 1%;
+  top: 15%;
+}
+
+.header__second .group1 {
+  position: absolute;
+  top: 40%;
+  left: 70%;
 }
 
 .online {
@@ -147,6 +184,10 @@
   margin-top: 6rem;
 }
 
+.pics__second {
+  position: relative;
+}
+
 .pics__all {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,13 +200,139 @@
           align-items: center;
 }
 
+.pics__first {
+  position: relative;
+}
+
 .pics__img2 {
   -webkit-transform: perspective(600px) rotateY(15deg);
           transform: perspective(600px) rotateY(15deg);
 }
 
+.pics .group2 {
+  position: absolute;
+  left: -30%;
+  z-index: -1;
+  bottom: -5%;
+}
+
+.pics .free {
+  position: absolute;
+  left: 0%;
+  top: 75%;
+  -webkit-box-shadow: 10px 15px 20px 0 #e2dede;
+          box-shadow: 10px 15px 20px 0 #e2dede;
+}
+
+.pics .slayd {
+  color: white;
+  background: #228BDA;
+  -webkit-box-shadow: 0px 46px 57px rgba(116, 131, 143, 0.765762);
+          box-shadow: 0px 46px 57px rgba(116, 131, 143, 0.765762);
+  border-radius: 3.42px;
+  position: absolute;
+  width: 148px;
+  height: 46px;
+  left: -8%;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pics .natija {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 38px 48px rgba(116, 131, 143, 0.253879);
+          box-shadow: 0px 38px 48px rgba(116, 131, 143, 0.253879);
+  border-radius: 3.42px;
+}
+
+.pics .number {
+  width: 27px;
+  height: 27px;
+  background: #86BE47;
+  -webkit-box-shadow: 0px 2px 5px rgba(150, 239, 50, 0.668488);
+          box-shadow: 0px 2px 5px rgba(150, 239, 50, 0.668488);
+  border-radius: 3.42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.8rem;
+  padding: 5px 10px;
+  color: white;
+}
+
+.pics .slayd img {
+  margin-right: 0.8rem;
+}
+
+.pics .statistics {
+  position: absolute;
+  padding: 6px 20px;
+  display: inline-block;
+  -webkit-box-shadow: 0 15px 20px 0 #dcd8d8;
+          box-shadow: 0 15px 20px 0 #dcd8d8;
+  border-radius: 5px;
+  left: 70%;
+  top: -11%;
+}
+
+.pics .statistics .gr-button {
+  background: #86BE47;
+  -webkit-box-shadow: 0px 15px 19px rgba(152, 222, 73, 0.689658);
+          box-shadow: 0px 15px 19px rgba(152, 222, 73, 0.689658);
+  border-radius: 2.28px;
+  width: 63px;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: absolute;
+  top: -10%;
+  left: 75%;
+}
+
+.pics .statistics .rectangles {
+  border: 1px solid #dad3d3;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .content {
   margin-top: 6rem;
+  margin-bottom: 30rem;
 }
 
 .content__all {
@@ -295,19 +462,140 @@ button {
   cursor: pointer;
 }
 
-.header__hammasi {
+.finish {
+  margin-top: 15rem;
+  padding-top: 3rem;
+  margin-bottom: 20rem;
+  position: relative;
+}
+
+.finish .copy {
+  position: absolute;
+  left: 1%;
+}
+
+.finish__all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.finish__first {
+  width: 50%;
+}
+
+.finish__first h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.finish__first p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.finish__second .green-div {
+  position: absolute;
+  left: 75%;
+  top: -50%;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(152.04deg, #BBFF6E 6.36%, #598F1D 97.81%);
+  -webkit-box-shadow: 0px 38px 48px rgba(134, 190, 71, 0.480879);
+          box-shadow: 0px 38px 48px rgba(134, 190, 71, 0.480879);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.finish__second .blue-div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 64%;
+  top: 100%;
+  background: linear-gradient(147.39deg, #9BD5FF 13.97%, #228BDA 92.67%);
+  -webkit-box-shadow: 0px 38px 48px rgba(34, 139, 218, 0.236642);
+          box-shadow: 0px 38px 48px rgba(34, 139, 218, 0.236642);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.finish__second .gr-dots {
+  position: absolute;
+  top: -90%;
+  left: 83%;
+  z-index: -1;
+}
+
+.finish__second .bl-dots {
+  position: absolute;
+  left: 59%;
+  top: 145%;
+  z-index: -1;
 }
 
 @media (max-width: 1000px) {
   .header__second img {
     width: 199%;
   }
+  .group1 {
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 90%;
+  }
 }
 
 @media (max-width: 899px) {
+  .content {
+    margin-bottom: 8rem;
+  }
+  .finish {
+    background-color: #C4D0DA;
+    padding: 3rem 0;
+    margin: 4rem auto;
+  }
+  .finish__all {
+    display: block;
+  }
+  .finish__second {
+    display: none;
+  }
+  .finish__first {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .copy {
+    display: none;
+  }
+  .image10 {
+    display: none;
+  }
+  .background {
+    background-color: #f6f8fa;
+  }
   .header__hammasi {
     display: block;
   }
@@ -333,10 +621,34 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .header__second img {
+  .header__second .image1 {
     width: 100%;
     -webkit-transform: perspective(0) rotateY(0);
             transform: perspective(0) rotateY(0);
+  }
+  .path2 {
+    display: none;
+    position: absolute;
+    left: 1%;
+    top: 15%;
+  }
+  .slayd img {
+    display: none;
+  }
+  .free {
+    display: none;
+  }
+  .group2 {
+    display: none;
+  }
+  .pics__second .statistics {
+    display: none;
+  }
+  .natija {
+    width: 25%;
+  }
+  .header__second .group1 {
+    display: none;
   }
   .online__hammasi h1 {
     font-size: 40px;
@@ -354,6 +666,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 4rem;
   }
   .pics__img2 {
     width: 100%;
@@ -388,10 +701,10 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .foob {
-    width: 200%;
+  .rasm .foob {
     -webkit-transform: perspective(0px) rotateY(0deg);
             transform: perspective(0px) rotateY(0deg);
+    width: 300px;
   }
   .content__second img {
     width: 100%;

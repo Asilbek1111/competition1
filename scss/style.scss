@@ -9,6 +9,17 @@
     margin: auto;
 }
 
+.background{
+  .image10{
+      position: absolute;
+      left: -8%;
+      top: -8%;
+      transform: perspective(600px) rotateY(-13deg) ;
+      z-index: -1;
+  }
+
+}
+
 .nav{
    
     &__hammasi{
@@ -47,7 +58,12 @@
 }
 
 .header{
-
+    &__hammasi{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
     margin-top: 3rem;
 
     &__first{
@@ -86,10 +102,21 @@
     }
 
     &__second{
-        img{
+        position: relative;
+        .image1{
             transform: perspective(600px) rotateY(-15deg) ;
-           
             margin-top: 30px;
+        }
+        .path2{
+            position: absolute;
+            left: 1%;
+            top: 15%;
+            
+        }
+        .group1{
+            position: absolute;
+            top: 40%;
+            left: 70%;
         }
     }
 }
@@ -118,23 +145,119 @@
 }
 
 .pics{
+    &__second{
+        position: relative;
+    }
     margin-top: 6rem;
     &__all{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+    }
 
-       
+    &__first{
+        position: relative;
     }
      &__img2{
             transform: perspective(600px) rotateY(15deg) ;
         }
+        .group2{
+            position: absolute;
+            left: -30%;
+            z-index: -1;
+            bottom: -5%;
+        }
+        .free{
+            position: absolute;
+            left: 0%;
+            top: 75%;
+            box-shadow: 10px 15px 20px 0 rgb(226, 222, 222);
+        }
+
+        .slayd{
+            color: white;
+            background: #228BDA;
+            box-shadow: 0px 46px 57px rgba(116, 131, 143, 0.765762);
+            border-radius: 3.42px;
+            position: absolute;
+            width: 148px;
+            height: 46px;
+            left: -8%;
+            top: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .natija{
+            position: absolute;
+            top: 40%;
+            left: 80%;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0px 38px 48px rgba(116, 131, 143, 0.253879);
+            border-radius: 3.42px;
+        }
+
+        .number{
+            width: 27px;
+            height: 27px;
+            background: #86BE47;
+            box-shadow: 0px 2px 5px rgba(150, 239, 50, 0.668488);
+            border-radius: 3.42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0.8rem;
+            padding: 5px 10px;
+            color: white;
+        }
+        
+        .slayd img{
+            margin-right: 0.8rem;
+        }
+
+        .statistics{
+            position: absolute;
+            padding: 6px 20px;
+            display: inline-block;
+            box-shadow: 0 15px 20px 0 rgb(220, 216, 216);
+            border-radius: 5px;
+            left: 70%;
+            top: -11%;
+        
+
+            .gr-button{
+                background: #86BE47;
+                box-shadow: 0px 15px 19px rgba(152, 222, 73, 0.689658);
+                border-radius: 2.28px;
+                width: 63px;
+                height: 43px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                position: absolute;
+                top: -10%;
+                left: 75%;
+            }
+            .rectangles{
+                border:1px solid rgb(218, 211, 211);
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+        
 
 }
 
 
 .content{
     margin-top: 6rem;
+    margin-bottom: 30rem;
     &__all{
         display: flex;
         justify-content: space-between;
@@ -239,18 +362,129 @@ button{
 }
 
 
-.header__hammasi{
-    display: flex;
+.finish{
+    margin-top: 15rem;
+    padding-top: 3rem;
+    margin-bottom: 20rem;
+    position: relative;
+
+    .copy{
+        position: absolute;
+        left: 1%;
+    }
+    &__all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+
+    }
+    &__first{
+        width: 50%;
+        h1{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    &__second{
+       
+        .green-div{
+            position: absolute;
+            left: 75%;
+            top: -50%;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(152.04deg, #BBFF6E 6.36%, #598F1D 97.81%);
+            box-shadow: 0px 38px 48px rgba(134, 190, 71, 0.480879);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .blue-div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left:64%;
+            top:100%;
+            background: linear-gradient(147.39deg, #9BD5FF 13.97%, #228BDA 92.67%);
+            box-shadow: 0px 38px 48px rgba(34, 139, 218, 0.236642);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gr-dots{
+            position: absolute;
+            top:-90% ;
+            left: 83%;
+            z-index: -1;
+        }
+
+        .bl-dots{
+            position: absolute;
+            left:59%;
+            top:145%;
+            z-index: -1;
+        }
+    
+    }
+    
 }
+
 
 
 @media (max-width:1000px){
     .header__second img{
       width:199%
     }
+    .group1{
+        height: 200px;
+        position: absolute;
+        top: 40%;
+        left: 90%;
+        
+    }
+
 }
 
 @media (max-width:899px){
+    .content{
+        margin-bottom: 8rem;
+    }
+    .finish{
+        background-color: #C4D0DA;
+        padding: 3rem 0;
+        margin: 4rem auto;
+    }
+    .finish__all{
+        display: block;
+    }
+    .finish__second{
+        display: none;
+    }
+    .finish__first{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .copy{
+        display: none;
+    }
+
+    .image10{
+        display: none;
+    }
+    .background{
+        background-color: rgb(246,248,250);
+    }
     .header__hammasi{
         display: block;
     }
@@ -266,10 +500,39 @@ button{
         display: flex;
         justify-content: center;
     }
-    .header__second img{
+    .header__second .image1{
         width:100%;
         transform: perspective(0) rotateY(0) ;
       }
+
+      .path2{
+        display: none;
+        position: absolute;
+        left: 1%;
+        top: 15%;
+        
+    }
+
+    .slayd img{
+        display: none;
+    }
+    .free{
+       display: none;
+    }
+    .group2{
+        display: none;
+    }
+    .pics__second .statistics{
+       display: none;
+    }
+    .natija{
+        width: 25%;
+    }
+    .header__second .group1{
+
+        display: none;
+    
+    }
       .online__hammasi h1{
           font-size: 40px;
       }
@@ -280,6 +543,7 @@ button{
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-bottom: 4rem;
       }
       .pics__img2{
         width:100%;
@@ -304,9 +568,9 @@ button{
           display: flex;
           justify-content: center;
       }
-      .foob{
-        width: 200%;
+      .rasm .foob{
         transform: perspective(0px) rotateY(0deg) ;
+        width: 300px;
       }
       .content__second img{
       width: 100%;
